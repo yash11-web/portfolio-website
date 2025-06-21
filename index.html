@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yashwanth | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-p0XG8Lk93yxU6OuqcIb2u0j6jRZWq7MdGzI3MTmcdlSn0q60zOAl3UMjb7XyHghByrKBoVz1bz0zcJqKFPlz0w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body>
+  <div class="navbar">
+  <h1><span>@thota_yashwanth</span></h1>
+  
+ 
+  <div class="menu-toggle" id="menuToggle">Menu ▾</div>
+
+  <ul id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+
+
+  <section id="home" class="section">
+    <div class="content">
+      <h2 class="intro">Hi, I am <span class="typing">Thota Yashwanth</span></h2>
+      <h3 class="role">AI & ML Enthusiast</h3>
+      <p class="description">Exploring the power of AI to solve real-world challenges.</p>
+      <div class="buttons">
+        <a href="resume/yashwanth_resume.pdf" class="btn" target="_blank">View Resume</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="section">
+    <div class="content">
+      <h2 class="title">About Me</h2>
+      <p>
+        I’m Thota Yashwanth, a Computer Science undergraduate with a strong interest in software development and artificial intelligence. I enjoy solving real-world problems using technology. I’m a quick learner, curious by nature, and enjoy collaborating with others to build practical and user-focused solutions. I am familiar  with tools like Git, Docker, and MySQL. My goal is to grow as a well-rounded software engineer, stay updated with evolving tech trends, and contribute to impactful and innovative projects in the industry. focus on writing clean code, creating intuitive user experiences, and continuously learning new technologies.
+      </p>
+    </div>
+  </section>
+
+ 
+  <section id="skills" class="section">
+    <div class="content">
+      <h2 class="title">Skills</h2>
+      <p><strong>Languages:</strong> Python, Java, C, C++</p>
+      <p><strong>Web:</strong> HTML, CSS, Streamlit</p>
+      <p><strong>ML Frameworks:</strong> Scikit-Learn, TensorFlow, Hugging Face, OpenCV</p>
+      <p><strong>Tools & Platforms:</strong> Docker, Git, GitHub, MySQL</p>
+    </div>
+  </section>
+
+  
+  <section id="work" class="section">
+    <div class="content">
+      <h2 class="title">Projects</h2>
+
+      <div class="work-item">
+        <h3>Forest Fire Detection using CNN</h3>
+        <p>Built a CNN-based image classification model to automatically detect forest fires from images. Implemented
+data preprocessing, augmentation, and evaluation using metrics like precision, recall, and F1-score. Deployed
+the model with a Gradio web interface for real-time image prediction.</p>
+        <p class="tech-stack">Tech Stack: Python, TensorFlow, OpenCV, Streamlit</p>
+        <a href="https://github.com/yash11-web/ForestFireDetection_DL.git" class="project-link" target="_blank">View on GitHub</a>
+        
+      </div>
+
+      <div class="work-item">
+        <h3>AskMyFile</h3>
+        <p>This is a file-based Retrieval-Augmented Generation (RAG) chatbot built with Streamlit. It allows users to
+upload documents (PDF, DOCX, CSV, etc.), extracts the content, creates a FAISS vector store using Hugging Face
+embeddings, and answers queries using a locally hosted GGUF language model(LLM).</p>
+        <p class="tech-stack">Tech Stack: Python, LangChain, FAISS, Hugging Face, Streamlit</p>
+        
+      </div>
+
+      <div class="work-item">
+        <h3>Data Visualization Assistant</h3>
+        <p>Visualizer AI is an intelligent data visualization tool that allows users to generate insightful plots using natural
+language commands. Built with Streamlit, it uses a locally hosted LLaMA model to
+understand user queries and convert them into Python code using Matplotlib, Seaborn for interactive plots. This
+tool bridges the gap between non-technical users and complex data visualizations without writing code.</p>
+        <p class="tech-stack">Tech Stack: Python, Matplotlib, Seaborn, Streamlit</p>
+        
+      </div>
+
+    </section>
+    </div>
+ 
+<div class="toggle-wrapper" title="Toggle Dark/Light Mode">
+  <label class="theme-switch">
+    <input type="checkbox" id="modeToggle">
+    <span class="slider"></span>
+  </label>
+</div>
+
+
+ 
+<section id="contact" class="section">
+  <div class="content">
+    <h2 class="title">Contact</h2>
+    <p>📧yashwanth.thota1@gmail.com</p>
+    <p>🔗 
+      <a href="https://github.com/yash11-web" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/in/thotayashwanth1" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+</section>
+
+
+<script>
+  const toggle = document.getElementById('modeToggle');
+  const body = document.body;
+
+  
+  if (localStorage.getItem('theme') === 'light') {
+    body.classList.add('light-mode');
+    toggle.checked = true;
+  }
+
+  toggle.addEventListener('change', () => {
+    body.classList.toggle('light-mode');
+    localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
+  });
+</script>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.textContent = navLinks.classList.contains('active') ? 'Menu ▴' : 'Menu ▾';
+  });
+</script>
+
+  
+</body>
+</html>
