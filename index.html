@@ -36,7 +36,7 @@
       <h3 class="role">AI & ML Enthusiast</h3>
       <p class="description">Exploring the power of AI to solve real-world challenges.</p>
       <div class="buttons">
-        <a href="resume/ThotaYashwanth_resume_SDE.pdf" class="btn" target="_blank">View Resume</a>
+        <a href="resume/yashwanth_resume.pdf" class="btn" target="_blank">View Resume</a>
       </div>
     </div>
   </section>
@@ -66,25 +66,60 @@
   <section id="work" class="section">
     <div class="content">
       <h2 class="title">Projects</h2>
+      <div class="work-item">
+  <h3>AI Resume Analyzer</h3>
+  <p>
+  A full-stack web application that allows users to upload resumes and compare them against job descriptions. 
+  The app analyzes the content using AI to identify missing and matching keywords, calculates a relevance score, 
+  and provides actionable suggestions to improve resume quality. It is designed to help candidates tailor their 
+  resumes for higher chances of shortlisting and passing Applicant Tracking Systems (ATS).
+</p>
+<p class="tech-stack">
+  Tech Stack: Node.js, Express, Supabase, Google Gemini AI, HTML, CSS, JavaScript, Render
+</p>
 
+
+  <!-- Links Section -->
+  <a href="https://github.com/yash11-web/AI-Resume-Analyzer" 
+     class="project-link" target="_blank">
+     <i class="fab fa-github"></i> GitHub
+  </a>
+
+  <a href="https://ai-resume-analyzer-vpt9.onrender.com" 
+     class="project-link" target="_blank">
+     <i class="fas fa-external-link-alt"></i> Live Demo
+  </a>
+</div>
+<div class="work-item">
+        <h3>AskMyFile</h3>
+        <p>AskMyFile is an advanced file-based Retrieval-Augmented Generation (RAG) chatbot built with Streamlit and powered by Google Gemini API. Users can upload a wide range of documents, including PDFs, Word documents, CSVs, Excel sheets, PowerPoint presentations, JSON files, and plain text files. The app automatically extracts the content from the uploaded files, splits it into meaningful chunks, and creates a FAISS vector store using Hugging Face embeddings to enable efficient semantic search.</p>
+
+<p>Once the vector store is created, users can ask natural language questions about the content of their documents. The chatbot leverages the Gemini LLM to provide accurate and context-aware answers by retrieving relevant sections from the uploaded files. AskMyFile is designed for ease of use, allowing users to preview the extracted content, ask queries interactively, and view the source content used for generating answers.</p>
+
+<p class="tech-stack">Tech Stack: Python, Streamlit, LangChain, FAISS, Hugging Face, Google Gemini API</p>
+<!-- Links Section -->
+  <a href="https://github.com/yash11-web/AskMyFile_ChatBot.git" 
+     class="project-link" target="_blank">
+     <i class="fab fa-github"></i> GitHub
+  </a>
+
+  <a href="https://askmyfilechatbot-yash.streamlit.app" 
+     class="project-link" target="_blank">
+     <i class="fas fa-external-link-alt"></i> Live Demo
+  </a>
+        
+      </div>
       <div class="work-item">
         <h3>Forest Fire Detection using CNN</h3>
         <p>Built a CNN-based image classification model to automatically detect forest fires from images. Implemented
 data preprocessing, augmentation, and evaluation using metrics like precision, recall, and F1-score. Deployed
 the model with a Gradio web interface for real-time image prediction.</p>
-        <p class="tech-stack">Tech Stack: Python, TensorFlow, OpenCV, Streamlit</p>
+        <p class="tech-stack">Tech Stack: Python, TensorFlow, OpenCV, Gradio</p>
         <a href="https://github.com/yash11-web/ForestFireDetection_DL.git" class="project-link" target="_blank">View on GitHub</a>
         
       </div>
 
-      <div class="work-item">
-        <h3>AskMyFile</h3>
-        <p>This is a file-based Retrieval-Augmented Generation (RAG) chatbot built with Streamlit. It allows users to
-upload documents (PDF, DOCX, CSV, etc.), extracts the content, creates a FAISS vector store using Hugging Face
-embeddings, and answers queries using a locally hosted GGUF language model(LLM).</p>
-        <p class="tech-stack">Tech Stack: Python, LangChain, FAISS, Hugging Face, Streamlit</p>
-        
-      </div>
+      
 
       <div class="work-item">
         <h3>Data Visualization Assistant</h3>
@@ -95,6 +130,8 @@ tool bridges the gap between non-technical users and complex data visualizations
         <p class="tech-stack">Tech Stack: Python, Matplotlib, Seaborn, Streamlit</p>
         
       </div>
+      
+
 
     </section>
     </div>
